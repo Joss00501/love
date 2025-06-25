@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Te Amo Con Fondo Animado</title>
+<style>
+  /* Reset básico */
+  * {
+    margin: 0; padding: 0; box-sizing: border-box;
+  }
+  html, body {
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  body {
+    position: relative;
+    overflow: hidden;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+  }
+
+  /* Fondo GIF animado */
+  .background-gif {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+    filter: brightness(0.5);
+  }
+
+  h1 {
+    font-size: 4rem;
+    text-shadow: 0 0 15px #CCA9DD, 0 0 30px #2271b3;
+    margin-bottom: 20px;
+    user-select: none;
+  }
+
+  p {
+    max-width: 600px;
+    font-size: 1.3rem;
+    background: rgba(0,0,0,0.5);
+    padding: 15px 25px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px #95c799;
+    user-select: none;
+  }
+
+  @media (max-width: 600px) {
+    h1 {
+      font-size: 2.5rem;
+    }
+    p {
+      font-size: 1rem;
+      max-width: 90%;
+      color: #CCA9DD;
+      justify-content: center;
+    }
+  }
+</style>
+</head>
+<body>
+
+  <img 
+    class="background-gif" 
+    src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExa2hmNzJjYnIzem94czBnenoyc3F0ZGpoZnB5aHNvNzJ0bnpiY25qdyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/YNk9HRcH9zJfi/giphy.gif" 
+    alt="Fondo animado estrellas" 
+    aria-hidden="true"
+  />
+
+  <h1>Te Amo Con Todo Mi Corazón❤️</h1>
+  <p>
+    Te Amo con todo mi corazón, gracias por todo, 
+    por tu apoyo y esos momentos lindos que me has brindado.
+    Siempre te llevaré conmigo💕
+  </p>
+
+</body>
+</html>
